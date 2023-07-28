@@ -1,0 +1,62 @@
+@font-face {
+   font-family: "Futura Bk BT";
+   src: url('../fonts/FuturaBk/futurabkbtrusbyme_book.otf');
+}
+@font-face {
+   font-family:"Futura Bk BT italic"; ;
+   src: url('../fonts/FuturaBk/futurabkbtrusbyme_bookitalic.otf');
+}
+@font-face {
+   font-family:"Futuris Black";
+   src: url('../fonts/FuturisBlackBold/Futuris-Black-Bold.ttf');
+   
+
+}
+@font-face {
+   font-family:"Futura Hv BT";
+   src: url('../fonts/futura-hv-bt-heavy/Futura\ Hv\ BT\ Heavy.ttf');
+}
+
+@font-face {
+   font-family: "Futura Md BT" ;
+   src: url('../fonts/FuturaMd/futuramdbtrusbyme_medium.otf');
+   font-weight:  400;
+
+}
+
+@font-face {
+   font-family: "Futura Md BT" ;
+   src: url('../fonts/FuturaMd/futuramdbtrusbyme_bold.otf');
+   font-weight:  700;
+
+
+}
+
+
+@font-face {
+   font-family: "Futura LT";
+   src: url('../fonts/Futura-LT/futuralt_bold.ttf');
+}
+@font-face {
+   font-family: "Futura LtCn BT";
+   src: url('../fonts/Futura-LtCn-BT-Light/Futura\ LtCn\ BT\ Light.ttf');
+}
+@font-face {
+   font-family: "Futura LtCn BT";
+   src: url('../fonts/Futura-LtCn-BT-Light/Futura\ LtCn\ BT\ Light.ttf');
+}
+
+@font-face {
+   font-family: "Futura XBlkCnIt BT ";
+   src: url('../fonts/Futura\ XBlkCnIt\ BT\ Extra\ Black\ Italic/FuturaXBlkCnItBTExtraBlackItalic.ttf');
+}
+
+$bk:"Futura Bk BT";
+$bki:"Futura Bk BT italic"; 
+$ltcn:"Futura LtCn BT";
+$lt:"Futura LT";
+$md:"Futura Md BT" ;
+$hv:"Futura Hv BT";
+$black:"Futuris Black";
+$bt:"Futura XBlkCnIt BT ";
+
