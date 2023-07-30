@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fontsicon/icomoon.eot?7ov0');
+  src:  url('fontsicon/icomoon.eot?7ov0#iefix') format('embedded-opentype'),
+    url('fontsicon/icomoon.ttf?7ov0') format('truetype'),
+    url('fontsicon/icomoon.woff?7ov0') format('woff'),
+    url('fontsicon/icomoon.svg?7ov0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before, [class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-360:before {
+  content: "\e900";
+  color: #fff;
+}
+.icon-Accounticon:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-Logo:before {
+  content: "\e902";
+}
+.icon-Outline:before {
+  content: "\e903";
+  color: #fff;
+}
+.icon-Search:before {
+  content: "\e904";
+  width: 300px;
+  height: 300px;
+  color: #fff;
+}
+.icon-Shopp:before {
+  content: "\e905";
+  color: #fff;
+}

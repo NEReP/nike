@@ -1,34 +1,4 @@
-.btn__link {
-   
-   margin-top: 32px;
-   display: inline-block;
-   padding: 18px 40px 18px 18px;
-   
-   border: 1px solid #fff;
-   border-radius: 36px;
 
-   font-family: $bk;
-   letter-spacing: normal;
-   color: #FFF;
-   font-size: 12px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: 0px;
-
-   position: relative;
-}
-
-.btn__link::after {
-   content: "";
-   width: 20px;
-   height: 20px;
-
-   background-image: url(../img/icons/Outline.svg);
-   
-   position: absolute;
-   right: 15px;
-   bottom: 10px;
-}
 body{
    font-family: $bk;
 
@@ -101,31 +71,31 @@ body{
 
 .banner{
    position: relative;
-   &__content{
-   }
+      //-------------------------background-text
 
-   //-------------------------background-text
    .background-text{
-      
-      padding: 0 0 0 50px ;
       background: linear-gradient(180deg, #ffffffbe 33%, #948a8aca 80%, #363739 90%, #000000 99%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-
+   
       font-size: 128px;
       font-family: $lt;
       font-style: normal;
       font-weight:700;
       line-height: 128px;
-
+   
       opacity: 0.1;
       position: absolute;
       z-index: 8;
-      left: 2%;
-      top: 100px;
+      left: -1%;
+      top: 5%;
       pointer-events: none;
       
    }
+
+
+
+   
    
    //------------------------------left decoration
 
@@ -139,7 +109,7 @@ body{
       position: absolute;
       z-index: 4;
       top:60px;
-      left: -20%;
+      left: -30%;
       display: flex;
       justify-content: end;
       .decoration__btn{
@@ -238,13 +208,14 @@ body{
       min-width: 187px;
       min-height: 505px;
 
-      border-left: 1px solid #363739;
-      border-top: 1px solid #363739;
-      border-bottom: 1px solid  #363739;
+     
+      border: 1px solid #363739;
+      border-right: none;
+
       
       position: absolute;  
       z-index:8;
-      right: -2.5%;
+      right: -8%;
       top: 50px;
    }
 
@@ -266,11 +237,8 @@ body{
 
    &__wrapper{
       margin-bottom: 137px;
-      padding: 60px 70px 0px 0px;
-      margin-left: 13%;
+      padding: 60px 30px 0px 0px;
 
-      
-  
       position: relative;
       z-index: 10;
 
@@ -290,7 +258,7 @@ body{
 
    &__images {
       max-width: 100%;
-      margin-right: 120px;
+      margin-right: 5%;
       .disable{
          display: none;
       }
@@ -567,7 +535,8 @@ body{
    }
    .slider-btn {
       position: static;
-      background-color: inherit;   
+      background-color: inherit;  
+      color: #FFF;
    }
 
    .slider-btn {
@@ -615,6 +584,39 @@ body{
    
 
 
+}
+////---------------------------------- link-btn
+
+.btn__link {
+   
+   margin-top: 32px;
+   display: inline-block;
+   padding: 18px 40px 18px 18px;
+   
+   border: 1px solid #fff;
+   border-radius: 36px;
+
+   font-family: $bk;
+   letter-spacing: normal;
+   color: #FFF;
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 0px;
+
+   position: relative;
+}
+
+.btn__link::after {
+   content: "";
+   width: 20px;
+   height: 20px;
+
+   background-image: url(../img/icons/Outline.svg);
+   
+   position: absolute;
+   right: 15px;
+   bottom: 10px;
 }
 //---------------------------------- Label-section
 .label-section {
@@ -664,6 +666,8 @@ body{
    }
    
 }
+//---------------------------------- title   
+
 .title{
    max-width: 611px;
    margin: 0 auto;
@@ -681,6 +685,7 @@ body{
       -webkit-text-fill-color: transparent;
    }
 }
+//---------------------------------- haber-block
 
 .haber {
 
@@ -694,8 +699,8 @@ body{
       max-width: 1064px;
       margin: 0 auto;
       margin-top: 32px;
-       text-align: center;
-      font-size: 16px;
+      text-align: center;
+      font-size: 24px;
       font-style: normal;
       font-weight: 400;
       line-height: 48px;
@@ -718,6 +723,8 @@ body{
    }
    
 }
+//---------------------------------- seller-block
+
 .seller {
    margin-top: 231px;
    
@@ -756,27 +763,32 @@ body{
     
    }
 }
+//---------------------------------- sports-time-block
 
 .sports-time {
    padding-top: 160px;
+
    &__title{
        font-family: $bt;
       font-size: 96px;
       font-style: italic;
       font-weight: 400;
       text-transform: capitalize;
+
       p{
          position: relative;
 
          transform: rotate(-10.675deg);
-         &:first-child{
 
-            -webkit-background-clip: text;
+         &:first-child{
+            background-clip: text;
             -webkit-text-fill-color: transparent;
+            
             background-image: linear-gradient(80deg, #ff000d, #ff5757, #ffffff,#ffffff, );
             z-index: 3;
 
          }
+
          &:last-child{
             z-index: 2;
             color: transparent;
@@ -789,57 +801,62 @@ body{
 
      
    }
+
    &__wrapper{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
    }
+
    &__product{
       margin-top: 210px;
       margin-right: 50px;
-      position: relative;
-      
 
+      position: relative;
    }
+
    &__name{
       margin-top: 16px;
-
-       font-family: $ltcn;
-      text-align: center;
       max-width: 400px;
+
+      font-family: $ltcn;
+      text-align: center;
       font-size: 24px;
       font-weight: 400;
       text-transform: capitalize;
+      
+
       
    }
    &__images img{
       position: absolute;
       bottom: 60px;
       left: 40px;
-
    }
+   
    .empty{
       width: 30%;
-   }
+   }  
+   
    .btn__link{
-     
-
       margin-top: 120px;
    }
    
 
 }
+
 .modern{
    margin-top: 238px;
 
   &__wrapper{
       display: flex;
       align-items: flex-start;
-
   }
+
   &__img{
       position: relative;
       z-index: 3;
+
       img{
          transform: rotate(9.691deg);
 
@@ -981,6 +998,9 @@ body{
 }
 .best-shoes {
    margin-top: 240px;
+   img{
+      border-radius: 12px;   
+   }
    
    &__wrapper{
       display: flex;
@@ -991,20 +1011,24 @@ body{
    &__text{
       padding-top: 60px;
    }
+
    &__descr{
       color: #FFF;
       font-size: 24px;
       font-weight: 400;
       margin-top: 32px;
    }
+
    &__title{
       line-height: normal;
       margin: 0 ;
       text-align: left;
    }
+
    .btn__link {
       margin-top: 40px;
    }
+
    &__images{
 
       display: grid;
@@ -1012,21 +1036,17 @@ body{
       align-items: start;
       justify-items: center;
       gap: 30px;
-      
 
-      
       position: relative;
 
       img{
          position: relative;
          z-index: 5;
-
       }
       
       .cycle {
          top:10%;
          left: 30%;
-         
       }
 
 
@@ -1038,18 +1058,18 @@ body{
       .img-2{
          grid-row-start: 1;
          grid-row-end: 2;
-
       }
+
       .img-3{
          grid-column-start: 2;
-
       }
-      
+
    }
    
 }
 .production {
    margin-top: 180px;
+
    &__wrapper{
       width: 100%;
       display: flex;
@@ -1057,45 +1077,54 @@ body{
       justify-content: space-between;
       
    }
+
    &__text{
       max-width: 621px;
    }
+
    &__descr{
       color: #FFF;
-      
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 400;
       text-transform: capitalize;
+
       span{
          font-family: $hv;
          text-transform: uppercase;
-
       }
+
       p{
          margin-top: 24px;
       }
+
    }
+
    &__title{
       text-align: left;
       width: 100%;
       font-size: 48px;
       line-height: normal;
+
       span{
          color: #BA0000;
 
       }
    }
+
    .btn__link {
       margin-top: 32px;
    }
 
 }
+
 .coupon {
    margin-top: 300px;
    margin-bottom: 280px;
+
    .container{
       position: relative;
    }
+
    &__wrapper{
       width: 100%;
       border-radius: 10px;
@@ -1104,21 +1133,23 @@ body{
       padding: 64px 40px;
       position: relative;
    }
+
    .logo {
       position: absolute;
       right: 5%;
       top: 40%;
    }
+
    .bc-img {
       position: absolute;
       right: -10%;
       top: 46%;
-      
-
    }
+
    &__descr{
       font-size: 24px;
    }
+
    &__title{
       margin: 0;
       max-width: 100%;
@@ -1130,11 +1161,13 @@ body{
 
 .delivery {
    margin-top: 300px;
+
    &__wrapper{
       width: 100%;
       display: flex;
       justify-content: space-between;
    }
+
    &__item{
       display: flex;
       align-items: center;
@@ -1148,28 +1181,33 @@ body{
       text-transform: capitalize;
 
    }
+
    &__name{
       font-family: $hv;
    }
+
    &__descr{
       margin-top: 8px;
    }
+
 }
 .menu-bottom {
    margin-top: 72px;
+
    &__wrapper{
       width: 100%;
       display: flex;
       gap: 140px;
       justify-content: space-between;
    }
+
    &__title{
       font-family: $hv;
       font-size: 48px;
       font-weight: 700;
       line-height: 64px;
-
    }
+
    &__form{
       position: relative;
       margin-top: 32px;
@@ -1192,6 +1230,7 @@ body{
          font-size: 16px;
       }
    }
+
    &__btn{
       position: absolute;
       
@@ -1203,6 +1242,7 @@ body{
       
 
    }
+
    &__logo{
       margin-top: 88px;
    }
@@ -1213,57 +1253,39 @@ body{
       grid-template-rows: 2fr;
       justify-content:end;
       column-gap:30px ;
-
-
    }
+
    &__list{
       font-family: $ltcn;
       font-size: 20px;
    }
+
    &__item{
       margin-bottom: 16px;
+
       &:first-child{
          font-family: $bt;
          font-size: 24px;
          margin-bottom: 24px;
-         
       }
-      
-   }
-   .shop{
-
-   }
-   .servies{
       
    }
    .help{
       grid-column-start: 3;
       grid-row-start: 1;
       grid-row-end: 3;
-
-
-
-
    }
-   .contact{
 
-      
- 
-   }
-   .enterprice{
-
-      
-   }
 }
+
 .footer{
    margin-top: 56px;
    padding: 31px 0;
    background-color: #000;
    border-top: 1px solid #fff;
+
    &__wrapper{
       width: 100%;
-
-      
    }
 
 }
