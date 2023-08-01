@@ -1,0 +1,241 @@
+.header{
+   .nav-catalog{
+  
+      .nav__link{ 
+         position: relative;
+
+         &::before{
+            content: "";   
+            height: 8px;
+            background: #BA0000;
+            position: absolute;  
+            left: 0; 
+            width: 0;
+            height: 8px;
+            transition: width 0.3s ease-out; 
+            top: -200%;
+         }
+   
+         &:hover::before{
+            width: 100%;
+   
+         }
+      }
+   }
+}
+.seller {
+
+   
+
+   &__card {
+      transition: all .3s;
+
+   }
+   &__card:hover {
+      transform: scale(105%);
+
+
+   }
+   &__tag{
+      transition: all .3s;
+
+   }
+   &__card:hover &__tag{
+      color:#ffF;
+   }
+}
+
+.sports-time__product:hover .sports-time__images img{
+   transform: translateY(-10%);
+}
+
+.sports-time__product img{
+   transition: all 1.5s;
+}
+
+.block{
+   
+
+   width: 300px;
+   height: 300px;
+
+   border-radius: 20px;
+   background: rgba(58, 48, 48, 0.6);
+   mix-blend-mode: soft-light;
+   backdrop-filter: blur(2px);
+   z-index: 3;
+
+   
+}
+
+.cycle{
+   max-width: 300px;
+   max-height: 300px;
+
+   z-index: 2;
+   border-radius: 111px;
+   background: conic-gradient(from 9deg at 46.78% 51.75%, #BA0000 0deg, #BA0000 360deg);
+   mix-blend-mode: hard-light;
+   animation-name: cycle-light;
+   animation-duration: 5s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;  
+   filter: blur(125px);
+
+   top: 30%;
+   left: 50%;
+   transform: translateX(-50%) translateY(-50%);
+   
+}
+@keyframes cycle-light {
+   0%{
+      width: 100px;
+      height: 100px;
+   }
+   
+   100%{
+      width: 100%;
+      height: 100%;
+
+   }
+}
+
+.favorite-slide {
+   .cycle{
+      width: 150px;
+      height: 150px;
+
+      transform: none;
+
+      left: 40%;
+      top: 40%;
+
+      animation-duration: 3s;
+      animation: none;
+
+      
+   }
+
+   &:nth-child(1) {
+      .cycle{  
+         top: 65%;
+         left:40%;
+
+         animation-delay: 5s;
+
+   
+
+      }
+   }
+   &:nth-child(2) {
+      .cycle{  
+       animation-delay: 2s;
+      }
+
+   }
+   &:nth-child(3) {
+      .cycle{  
+         animation-delay: 1s;  
+      }
+
+   }
+  
+}
+.best-shoes {
+   .cycle{
+      max-width: 350px;
+      max-height: 350px;
+      animation-duration:4s;
+
+
+      top: 45%;
+      left: 45%;
+   }
+   &__images{
+      .img-1{
+         animation-name:imagesFirst;
+         animation-duration: 3s;
+         animation-timing-function: linear;
+         animation-iteration-count: infinite;
+         animation-direction: alternate;  
+         animation-delay: 4s;
+        
+      }
+      .img-2{
+         animation-name:imagesSecond;
+         animation-duration: 3s;
+         animation-timing-function: linear;
+         animation-iteration-count: infinite;
+         animation-direction: alternate;  
+         animation-delay: 2s  ;
+        
+      }
+      .img-3{
+         animation-name:imagesThird;
+         animation-duration: 3s;
+         animation-timing-function: linear;
+         animation-iteration-count: infinite;
+         animation-direction: alternate;  
+         animation-delay: 1s;
+        
+      }
+   }
+
+}
+@keyframes imagesFirst {
+   0%{
+      transform: translateY(0);
+
+   }
+   100%{     
+      transform: translateY(10px);
+
+
+   }
+}
+@keyframes imagesSecond {
+   0%{
+      transform: translateX(0);
+
+   }
+   100%{     
+      transform: translateX(10px);
+
+
+   }
+}
+@keyframes imagesThird {
+   0%{
+      transform: translateY(0);
+
+   }
+   100%{     
+      transform: translateY(10px);
+
+
+   }
+}
+
+.production {
+   .cycle{
+      max-width: 350px;
+      max-height: 350px;
+
+      animation-iteration-count:1s ;
+      background: conic-gradient(from 9deg at 46.78% 51.75%, #ffffff32 0deg, #9f959575 360deg);
+
+
+      top: 50%;
+      left: 15%;
+   }
+}
+.btn__link:hover {
+   background-color: #fff;
+   color: #000;
+
+
+}
+
+
+
