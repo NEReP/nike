@@ -277,12 +277,16 @@ body{
 
    &__images {
       margin-right: 5%;
-      .disable{
-         display: none;
-      }
+      
    }
 
-   &__img img{
+   &__img {
+      display: none;
+      
+   }
+   &__img.active {
+      display: block;
+      
    }
    //------------------------------frist-block description
 

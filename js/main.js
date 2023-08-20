@@ -46,11 +46,24 @@ var secondSlider = new Swiper (".favorite__slider", {
   autoplayDisableOnInteraction: true,
 },);
 
-let banner = document.querySelectorAll(".banner__img");
-let bannerImg = banner.children;
-let mainFormRadioButtons=document.forms[1]
-let radioBtn=document.querySelectorAll(".input-color");\
+let btns= document.querySelectorAll(".input-color")
+let images= document.querySelectorAll(".banner__img")
 
+for (let i=0;i<btns.length;i++){
+  
+  btn=btns[i]
+  console.log(btn);
+
+  btn.addEventListener("click", 
+  ()=>{
+    let image=images[i]
+    images.forEach((img)=>{
+      img.classList.remove("active");
+      image.classList.add("active");
+    })
+
+  })
+}
 
 
 
