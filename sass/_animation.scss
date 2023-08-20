@@ -23,6 +23,29 @@
       }
    }
 }
+
+
+.banner{
+   
+
+   &__img.active{
+      animation-name: image-translated ;
+      animation-duration: .6s;
+      animation-timing-function: ease;
+   }
+
+}
+@keyframes image-translated {
+   0%{
+      transform: translateX(-100%);
+      opacity: 0;
+   }
+  100%{
+      transform: translateX(-0%);
+      opacity: 1;
+   }
+   
+}
 .seller {
 
    
