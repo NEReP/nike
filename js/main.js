@@ -19,13 +19,17 @@ for (let i = 0; i < selectSingle_labels.length; i++) {
   });
 }
 
+
+
+
+
 var slider = new Swiper (".slider", {
 
   navigation:{
     nextEl:".swiper-button-next",
     prevEl:".swiper-button-prev",
-       
  },
+
   slidesPerView:3,
   slidesPerGroup:3,
   spaceBetween: 0,
@@ -34,9 +38,12 @@ var slider = new Swiper (".slider", {
   autoplay:10,
   autoplayDisableOnInteraction: false,
 },);
+
+
+
+
 var secondSlider = new Swiper (".favorite__slider", {
-
-
+  
   slidesPerView:3,
   slidesPerGroup:3,
   spaceBetween: 10,
@@ -46,25 +53,62 @@ var secondSlider = new Swiper (".favorite__slider", {
   autoplayDisableOnInteraction: true,
 },);
 
+
+
+
+
+
 let btns= document.querySelectorAll(".input-color")
 let images= document.querySelectorAll(".banner__img")
 
 for (let i=0;i<btns.length;i++){
-  
   btn=btns[i]
-  console.log(btn);
-
-  btn.addEventListener("click", 
-  ()=>{
+  btn.addEventListener("click", ()=>{
     let image=images[i]
     images.forEach((img)=>{
       img.classList.remove("active");
       image.classList.add("active");
     })
-
   })
 }
 
+
+
+
+const animItems=document.querySelectorAll(".anim-items")
+
+if(animItems.length>0){
+  window.addEventListener("scroll",animOnScroll)
+  function animOnScroll(){
+    for (let index = 0; index < animItems.length; index++) {
+      const animItem = animItems[index];
+      const animItemHeigth = animItem.offsetHeight;
+      const animItemOffset=offset(animItem).top;
+      const animStart = 4;
+      
+      let animItemPoint=window.innerHeight-animItemHeigth / animStart;
+      if (animItemHeigth>window.innerHeight) {
+        let animItemPoint=window.innerHeight-window.innerHeight / animStart;  
+
+      }
+      if((scrollY > animItemOffset-animItemPoint ) && scrollY < (animItemOffset + animItemHeigth)){
+        animItem.classList.add("active")
+      }
+      else{
+        animItem.classList.remove("active")
+
+      }
+    }
+  }
+  function offset(el) {
+    const rect = el.getBoundingClientRect(),
+      srollLeft=Window.pageXOffset||document.documentElement.scrollLeft,
+      srollTop=Window.pageYOffset||document.documentElement.scrollTop;
+    return{top:rect.top + scrollTop, left:rect.left + scrollLeft}
+  }
+  animOnScroll()
+
+}
 
 
 

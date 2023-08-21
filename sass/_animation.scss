@@ -34,6 +34,17 @@
       animation-timing-function: ease;
    }
 
+   &__title{
+      transform:translate(0px, 120%);
+      opacity:0;
+      transition: all 0.3s ease;
+   }
+
+   &__title .active{
+      transform:translate(0px, 0%);
+      opacity:1;
+   }
+
 }
 @keyframes image-translated {
    0%{
