@@ -35,8 +35,13 @@ var slider = new Swiper (".slider", {
   spaceBetween: 0,
   loop: true,
   speed:2500,
-  autoplay:10,
-  autoplayDisableOnInteraction: false,
+  autoplay:3,
+  
+ touchRatio:0,
+ autoplay:{
+  delay:3000,
+
+ }
 },);
 
 
@@ -49,8 +54,12 @@ var secondSlider = new Swiper (".favorite__slider", {
   spaceBetween: 10,
   loop: true,
   speed:3000,
-  autoplay:0,
-  autoplayDisableOnInteraction: true,
+  autoplay:1000,
+
+  autoplay:{
+    delay:3000,
+  
+   }
 },);
 
 

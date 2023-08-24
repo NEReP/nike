@@ -1,0 +1,41 @@
+.coupon {
+   margin-top: 300px;
+   margin-bottom: 280px;
+
+   .container{
+      position: relative;
+   }
+
+   &__wrapper{
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid #FFF;
+      backdrop-filter: blur(2px);
+      padding: 64px 40px;
+      position: relative;
+   }
+
+   .logo {
+      position: absolute;
+      right: 5%;
+      top: 40%;
+   }
+
+   .bc-img {
+      position: absolute;
+      right: -10%;
+      top: 46%;
+   }
+
+   &__descr{
+      font-size: 24px;
+   }
+
+   &__title{
+      margin: 0;
+      max-width: 100%;
+      font-size: 48px;
+      text-align: left;
+   }
+   
+}

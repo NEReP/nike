@@ -1,0 +1,50 @@
+
+.production {
+   margin-top: 180px;
+
+   &__wrapper{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+   }
+
+   &__text{
+      max-width: 621px;
+   }
+
+   &__descr{
+      color: #FFF;
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: capitalize;
+
+      span{
+         font-family: $hv;
+         text-transform: uppercase;
+      }
+
+      p{
+         margin-top: 24px;
+      }
+
+   }
+
+   &__title{
+      text-align: left;
+      width: 100%;
+      font-size: 48px;
+      line-height: normal;
+
+      span{
+         color: #BA0000;
+
+      }
+   }
+
+   .btn__link {
+      margin-top: 32px;
+   }
+
+}

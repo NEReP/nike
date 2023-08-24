@@ -1,0 +1,39 @@
+.modern{
+   margin-top: 238px;
+
+  &__wrapper{
+      display: flex;
+      align-items: flex-start;
+  }
+
+  &__img{
+      position: relative;
+
+      img{
+         transform: rotate(9.691deg);
+
+         position: relative;
+         z-index: 4;
+      }
+
+      margin-right: 131px;
+  }
+
+   &__title{
+      font-family: $md;
+      font-weight: 400;
+      font-size: 64px;
+
+
+   }
+
+   &__text{
+      margin-top: 24px;
+      
+      font-size: 24px;
+
+   }
+   .btn__link {
+      margin-top: 40px;
+   }
+}

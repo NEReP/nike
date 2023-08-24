@@ -1,0 +1,39 @@
+.seller {
+   margin-top: 231px;
+   
+
+   &__card {
+      width: 416px;
+      height: 560px;
+      margin-right: 16px;
+      position: relative;
+      z-index: 2;
+
+      &:last-child{
+         margin: 0;
+      }
+     
+   }
+   &__tag{
+      font-family: $md;
+      text-align: center;
+      font-size: 64px;
+      font-style: italic;
+      font-weight: 700;
+      line-height: 64px; 
+      color: transparent;
+      -webkit-text-stroke: 1px rgb(255, 255, 255);
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+   }
+   &__wrapp {
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 107px;
+      padding: 0 px;
+
+      display: flex;
+    
+   }
+}

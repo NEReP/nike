@@ -1,0 +1,90 @@
+.menu-bottom {
+   margin-top: 72px;
+
+   &__wrapper{
+      width: 100%;
+      display: flex;
+      gap: 140px;
+      justify-content: space-between;
+   }
+
+   &__title{
+      font-family: $hv;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 64px;
+   }
+
+   &__form{
+      position: relative;
+      margin-top: 32px;
+   }
+   &__input{
+      width: 399px;
+      height: 56px;
+      padding: 0 146px 0 30px;
+
+      border-radius: 80px;
+      border: 1px solid #FFF;
+
+      color: #fff;
+      font-size: 18px;
+
+      background-color: #000;
+
+      &::placeholder{
+         text-align: center;
+         font-size: 16px;
+      }
+   }
+
+   &__btn{
+      position: absolute;
+      
+      width: 146px;
+      height: 56px;
+      right: 15%;
+      border-radius: 80px;
+      background: #FFF; 
+      
+
+   }
+
+   &__logo{
+      margin-top: 88px;
+   }
+
+   &__nav{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 2fr;
+      justify-content:end;
+      column-gap:30px ;
+   }
+
+   &__list{
+      font-family: $ltcn;
+      font-size: 20px;
+   }
+
+   &__item{
+      margin-bottom: 16px;
+
+      &:first-child{
+         font-family: $bt;
+         font-size: 24px;
+         margin-bottom: 24px;
+      }
+      
+   }
+   .help{
+      grid-column-start: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+   }
+   .servies{
+      align-self: auto;
+
+   }
+
+}

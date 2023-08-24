@@ -1,0 +1,73 @@
+.best-shoes {
+   margin-top: 240px;
+   img{
+      border-radius: 12px;   
+   }
+   
+   &__wrapper{
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap:60px;
+   }
+   &__text{
+      padding-top: 60px;
+   }
+
+   &__descr{
+      color: #FFF;
+      font-size: 24px;
+      font-weight: 400;
+      margin-top: 32px;
+   }
+
+   &__title{
+      line-height: normal;
+      margin: 0 ;
+      text-align: left;
+   }
+
+   .btn__link {
+      margin-top: 40px;
+      position: relative;
+      z-index: 12;
+   }
+
+   &__images{
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
+      justify-items: center;
+      gap: 30px;
+
+      position: relative;
+
+      img{
+         position: relative;
+         z-index: 5;
+      }
+      
+      .cycle {
+         top:10%;
+         left: 30%;
+      }
+
+
+      .img-1{
+         grid-row-start: 1;
+         grid-row-end: 3;
+
+      }
+      .img-2{
+         grid-row-start: 1;
+         grid-row-end: 2;
+      }
+
+      .img-3{
+         grid-column-start: 2;
+      }
+
+   }
+   
+}

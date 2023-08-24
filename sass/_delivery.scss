@@ -1,0 +1,32 @@
+.delivery {
+   margin-top: 300px;
+
+   &__wrapper{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__item{
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: capitalize;
+
+   }
+
+   &__name{
+      font-family: $hv;
+   }
+
+   &__descr{
+      margin-top: 8px;
+   }
+
+}

@@ -1,0 +1,14 @@
+.brands {
+   margin-top: 270px;
+   &__wrapper{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 15px;
+      max-width: 1530px;
+      margin: 0 auto;
+      padding-left: 37px;
+      
+   }
+   
+}
