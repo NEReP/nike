@@ -75,7 +75,9 @@ for (let i=0;i<btns.length;i++){
 
 
 
+
 const animItems=document.querySelectorAll(".anim-items")
+
 
 if(animItems.length>0){
   window.addEventListener("scroll",animOnScroll)
@@ -92,21 +94,28 @@ if(animItems.length>0){
 
       }
       if((scrollY > animItemOffset-animItemPoint ) && scrollY < (animItemOffset + animItemHeigth)){
-        animItem.classList.add("active")
+        animItem.classList.add("_active")
       }
       else{
-        animItem.classList.remove("active")
+        if(!animItem.classList.contains("anim-no-hide")){
+          animItem.classList.remove("_active") 
+
+        }
 
       }
     }
   }
   function offset(el) {
     const rect = el.getBoundingClientRect(),
-      srollLeft=Window.pageXOffset||document.documentElement.scrollLeft,
-      srollTop=Window.pageYOffset||document.documentElement.scrollTop;
+      scrollLeft=Window.pageXOffset||document.documentElement.scrollLeft,
+      scrollTop=Window.pageYOffset||document.documentElement.scrollTop;
     return{top:rect.top + scrollTop, left:rect.left + scrollLeft}
   }
   animOnScroll()
+  setTimeout(() => {
+    
+  }, 300);
+  
 
 }
 

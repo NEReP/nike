@@ -743,7 +743,7 @@ body{
       top: 175%
    }
 
-   .haber__background-img{
+   &__background-img{
       position: absolute;
       top: 330px;
       left: -217px;
@@ -801,8 +801,7 @@ body{
 
 .sports-time {
    padding-top: 160px;
-   .container{
-   }
+
    &__title{
        font-family: $bt;
       font-size: 96px;
@@ -810,7 +809,7 @@ body{
       font-weight: 400;
       text-transform: capitalize;
 
-      p{
+      .rotated{
          position: relative;
 
          transform: rotate(-10.675deg);
@@ -863,8 +862,9 @@ body{
    &__wrapper{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr ;
    }
+
 
    &__product{
       margin-top: 210px;
@@ -872,6 +872,12 @@ body{
 
       position: relative;
       z-index: 2;
+
+      &:nth-child(3){
+         grid-column-start: 2;
+
+
+      }
 
    }
 
@@ -1336,6 +1342,10 @@ body{
       grid-column-start: 3;
       grid-row-start: 1;
       grid-row-end: 3;
+   }
+   .servies{
+      align-self: auto;
+
    }
 
 }
