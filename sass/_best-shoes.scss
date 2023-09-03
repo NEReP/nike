@@ -7,7 +7,6 @@
    &__wrapper{
       display: flex;
       justify-content: space-between;
-      align-items: start;
       gap:60px;
    }
    &__text{
@@ -23,7 +22,7 @@
 
    &__title{
       line-height: normal;
-      margin: 0 ;
+      margin: 0;
       text-align: left;
    }
 

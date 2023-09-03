@@ -40,18 +40,16 @@
 
       
       }
-      .cycle{
+     
 
-         width: 150px;
-         height: 150px;
-         border-radius: 100%;
-         background: conic-gradient(from 180deg at 100% 20.00%, #F00 0deg, rgba(255, 0, 0, 0.00) 360deg);
-         background-blend-mode: luminosity;
-         filter: blur(90px);
-         left: 40%;
-         top: 40%;
-      }
-
+   }
+   &-slide{
+      border-right: 3px solid #FFF;
+      border-top: 5px solid #BA0000;;
+      border-bottom: 3px solid #FFF;
+      border-left: 5px solid #BA0000;
+      height: 290px;
+      padding: 10px;
    }
    &__img {
       position: relative;
@@ -61,13 +59,7 @@
       z-index: 3;
    }
 
-   .cycle.first-cycle{
-      animation: none;
-      top: 40%;
-      left:40%;
-
-
-   }
+ 
 
    .first-img {
       transform: translateY(40%);

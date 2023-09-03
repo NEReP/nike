@@ -1,0 +1,197 @@
+
+
+@media (max-width:1360px) {
+
+
+   
+   
+   .banner{
+      
+      &__img{
+          max-width: 105%;
+          position: relative;
+         
+      }
+      &__title{
+         font-size: 40px;
+      }
+      .price{
+         margin-right: 10%;
+      }
+      .slider{
+         &__img{
+            left:0%;
+            
+   
+         }
+     
+      }
+   }
+
+  
+   .decoration .left{
+
+      min-width: 200px;
+
+      left: -11%;
+      z-index: 3;
+      &__btn{
+         display: none;
+      }
+   }
+   .decoration.bottom{
+      min-width: 37%;
+   }
+   .favorite{
+      &__slider{
+         left: 0;
+      }
+   }
+}
+@media (max-width:1290px) {
+   .seller{
+      &__wrapper{
+         align-items:center;
+         flex-direction: column;
+
+      }
+      &__card{
+         margin: 20px 0px;
+      }
+   }
+
+   .sports-time{
+
+      &__title{
+         font-size: 80px;
+      }
+      
+      &__wrapper{
+         grid-template-columns: 1fr 1fr;
+      }
+      &__product{
+         &:nth-child(3){
+            grid-column-start: 1;
+   
+   
+         }
+   
+      }
+   }
+   
+}
+
+@media (max-width:1200px) {
+
+ 
+
+   .sports-time{
+      &__title{
+
+      }
+   }
+
+   .haber{
+      &__dscr{
+         font-size: 20px;
+         
+      }
+      &__background-img{
+         left: -15%;
+         max-width: 100%;
+      }
+   }  
+}
+
+
+@media (max-width:1000px) {
+   .best-shoes{
+      &__wrapper{
+         flex-direction: column;
+         align-items: center;
+   
+      }
+      &__title{
+         text-align: center;
+         margin: 0 auto;
+
+      }
+      &__text{
+         
+         text-align: center;
+
+      }
+   }
+}
+
+@media (max-width:940px) {
+   .modern{
+      
+      &__wrapper{
+         flex-direction: column;
+         align-items: center;
+         flex-flow: column-reverse;
+      }
+      &__img{
+         margin-right: 0;
+      }
+      &__descr{
+         margin-bottom: 40px;
+         text-align: center;
+      }
+   }
+   .brands{
+      margin-top: 100px;
+
+      &__wrapper{
+         flex-wrap: wrap;
+         flex-grow: 1;
+      }
+   }
+   .banner{
+      .slider{
+         &__name{
+            font-size: 14;
+            padding-top: 60%;
+            padding-left: 7%;
+         }
+         &__content{
+            min-height: 100px;
+         }
+      }
+   }
+   
+
+
+   
+}
+@media (max-width:850px) {
+   .production{
+      &__wrapper{
+         flex-direction: column;
+         align-items: center;
+      }
+      &__text{
+         margin-top: 30px;         
+      }
+      
+   }
+   .best-shoes{
+      margin-top: 100px;
+   }
+   .coupon{
+      margin-top: 120px;
+   }
+   .banner{
+      .slider-section{
+         flex-direction: column;
+         .slider{
+            margin: 0;
+            max-width: 100%;
+         }
+      }
+   }
+   
+}
+
+

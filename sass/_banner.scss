@@ -432,28 +432,33 @@
          border: 2px solid #FFF;   
          border-bottom: none;
       }
+      &__img {
+         max-height: 134px;
+
+         position: absolute;
+         left: 10%;
+         img{
+            max-width: 100%;
+
+
+         }
+
+         &.first{
+            top:-23%;
+         }
+         &.second{
+            top:-9%;
+         }
+         &.third{
+            top:-15%;
+         }
+      }
    }
   
-   .slider__img {
-      max-height: 134px;
-      
-      position: absolute;
-      left: 10%;
-   }
+  
 
-   .first{
-      top: -25%;
-   }
-
-   .second{
-      top: -10%;
-
-   }
-
-    .third{
-      top: -20%;
-   }
-
+   
+   
    .slider__name {
       padding-top: 134px;
       padding-left: 32px;

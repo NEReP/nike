@@ -23,6 +23,9 @@
       }
    }
 }
+.bc-decoration{
+   position: absolute;
+}
 
 .show-anim-up{
    transform:translate(0px , 120%);
@@ -109,19 +112,7 @@
    transform: translateX(0%);
    opacity: 1;
   
-.haber{
-  
-      // animation-name: anim-img;
-      // animation-duration: 1s;
-      // animation-timing-function: ease;
 
-    
-
-   } 
-
-   &__background-img{
-
-   }
 }
 .seller {
 
@@ -162,6 +153,8 @@
    mix-blend-mode: soft-light;
    backdrop-filter: blur(2px);
    z-index: 3;
+   top: -10%;
+   left: 10%;
 
    
 }

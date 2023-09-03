@@ -18,11 +18,14 @@
    &__form{
       position: relative;
       margin-top: 32px;
+      max-width: 399px;
+
    }
    &__input{
       width: 399px;
       height: 56px;
       padding: 0 146px 0 30px;
+      position: relative;
 
       border-radius: 80px;
       border: 1px solid #FFF;
@@ -43,9 +46,9 @@
       
       width: 146px;
       height: 56px;
-      right: 15%;
+      right: 0%;
       border-radius: 80px;
-      background: #FFF; 
+      background: #ffffff1f; 
       
 
    }

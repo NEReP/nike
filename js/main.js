@@ -38,9 +38,17 @@ var slider = new Swiper (".slider", {
   autoplay:3,
   
  touchRatio:0,
- autoplay:{
-  delay:3000,
+  autoplay:{
+    delay:3000, 
 
+  },
+ breakpoints:{
+
+  1000: {
+    spaceBetween: 10,
+
+
+  }
  }
 },);
 
@@ -54,12 +62,11 @@ var secondSlider = new Swiper (".favorite__slider", {
   spaceBetween: 10,
   loop: true,
   speed:3000,
-  autoplay:1000,
 
-  autoplay:{
-    delay:3000,
+  // autoplay:{
+  //   delay:3000,
   
-   }
+  //  }
 },);
 
 
@@ -70,13 +77,14 @@ var secondSlider = new Swiper (".favorite__slider", {
 let btns= document.querySelectorAll(".input-color")
 let images= document.querySelectorAll(".banner__img")
 
-for (let i=0;i<btns.length;i++){
-  btn=btns[i]
-  btn.addEventListener("click", ()=>{
-    let image=images[i]
-    images.forEach((img)=>{
+for (let i = 0; i < btns.length; i++){
+  let btn = btns[i];
+  btn.addEventListener("click", ()=> {
+    let image = images[i]
+    images.forEach((img)=> {
       img.classList.remove("active");
       image.classList.add("active");
+
     })
   })
 }
