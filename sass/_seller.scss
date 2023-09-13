@@ -1,5 +1,6 @@
 .seller {
    margin-top: 231px;
+   
 
 
    &__card {
@@ -28,10 +29,10 @@
       right: 8px;
    }
    &__wrapper{
+      display: flex;
       width: 100%;
       margin: 0 auto;
       margin-top: 107px;
-      display: flex;
     
    }
 }
