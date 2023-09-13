@@ -93,48 +93,48 @@ for (let i = 0; i < btns.length; i++){
 
 
 
-const animItems=document.querySelectorAll(".anim-items")
+// const animItems=document.querySelectorAll(".anim-items")
 
 
-if(animItems.length>0){
-  window.addEventListener("scroll",animOnScroll)
-  function animOnScroll(){
-    for (let index = 0; index < animItems.length; index++) {
-      const animItem = animItems[index];
-      const animItemHeigth = animItem.offsetHeight;
-      const animItemOffset=offset(animItem).top;
-      const animStart = 4;
+// if(animItems.length>0){
+//   window.addEventListener("scroll",animOnScroll)
+//   function animOnScroll(){
+//     for (let index = 0; index < animItems.length; index++) {
+//       const animItem = animItems[index];
+//       const animItemHeigth = animItem.offsetHeight;
+//       const animItemOffset=offset(animItem).top;
+//       const animStart = 4;
       
-      let animItemPoint=window.innerHeight-animItemHeigth / animStart;
-      if (animItemHeigth>window.innerHeight) {
-        let animItemPoint=window.innerHeight-window.innerHeight / animStart;  
+//       let animItemPoint=window.innerHeight-animItemHeigth / animStart;
+//       if (animItemHeigth>window.innerHeight) {
+//         let animItemPoint=window.innerHeight-window.innerHeight / animStart;  
 
-      }
-      if((scrollY > animItemOffset-animItemPoint ) && scrollY < (animItemOffset + animItemHeigth)){
-        animItem.classList.add("_active")
-      }
-      else{
-        if(!animItem.classList.contains("anim-no-hide")){
-          animItem.classList.remove("_active") 
+//       }
+//       if((scrollY > animItemOffset-animItemPoint ) && scrollY < (animItemOffset + animItemHeigth)){
+//         animItem.classList.add("_active")
+//       }
+//       else{
+//         if(!animItem.classList.contains("anim-no-hide")){
+//           animItem.classList.remove("_active") 
 
-        }
+//         }
 
-      }
-    }
-  }
-  function offset(el) {
-    const rect = el.getBoundingClientRect(),
-      scrollLeft=Window.pageXOffset||document.documentElement.scrollLeft,
-      scrollTop=Window.pageYOffset||document.documentElement.scrollTop;
-    return{top:rect.top + scrollTop, left:rect.left + scrollLeft}
-  }
-  animOnScroll()
-  setTimeout(() => {
+//       }
+//     }
+//   }
+//   function offset(el) {
+//     const rect = el.getBoundingClientRect(),
+//       scrollLeft=Window.pageXOffset||document.documentElement.scrollLeft,
+//       scrollTop=Window.pageYOffset||document.documentElement.scrollTop;
+//     return{top:rect.top + scrollTop, left:rect.left + scrollLeft}
+//   }
+//   animOnScroll()
+//   setTimeout(() => {
     
-  }, 300);
+//   }, 300);
   
 
-}
+// }
 let b
 
 
