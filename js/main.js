@@ -94,8 +94,6 @@ for (let i = 0; i < btns.length; i++){
 
 
 const animItems=document.querySelectorAll(".anim-items")
-
-
 if(animItems.length>0){
   window.addEventListener("scroll",animOnScroll)
   function animOnScroll(){

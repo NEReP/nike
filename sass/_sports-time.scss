@@ -2,7 +2,7 @@
    padding-top: 160px;
 
    &__title{
-       font-family: $bt;
+      font-family: $bt;
       font-size: 96px;
       font-style: italic;
       font-weight: 400;
@@ -26,8 +26,8 @@
             z-index: 2;
             color: transparent;
             -webkit-text-stroke: 1px rgb(255, 255, 255);
-            left: 170px;
-            top: -70px;
+            left: 55%;
+            top: -50px;
            
          }
       }
@@ -99,9 +99,7 @@
       left: 40px;
    }
    
-   .empty{
-      width: 30%;
-   }  
+  
    
    .btn__link{
       margin-top: 120px;

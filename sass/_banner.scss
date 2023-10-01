@@ -214,7 +214,7 @@
      
       margin-left: 5%;
       font-family:$md;
-      font-size: 48px;
+      font-size: calc(24px + 16 * ((100vw - 320px) / (1280 - 320)));
       font-style: italic;
       line-height: 48px;
       letter-spacing: 7.68px;
@@ -238,7 +238,7 @@
       display: flex;
       
       p{
-         font-size: 16px;
+         font-size: 20px;
          line-height: normal;
          letter-spacing: normal;
       }
@@ -262,7 +262,6 @@
 
          .select__shop-btn {
             background-color: #000;
-            margin-left: 32px;
             
          }
    

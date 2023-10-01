@@ -51,12 +51,13 @@
 @media (max-width:1290px) {
    .seller{
       &__wrapper{
-         align-items:center;
-         flex-direction: column;
+         // align-items:center;
+         // flex-direction: column;
 
       }
       &__card{
-         margin: 20px 0px;
+         transition: all .3s;
+         margin-top: 20px;
       }
    }
 
@@ -93,7 +94,6 @@
 
    .haber{
       &__dscr{
-         font-size: 20px;
          
       }
       &__background-img{
@@ -122,9 +122,22 @@
 
       }
    }
+   .coupon{
+      &__title{
+         font-size: calc(28px + 16 * ((100vw - 320px) / (1310 - 320)));
+         line-height: normal;
+
+      }
+      &__descr{
+         font-size: calc(10px + 16 * ((100vw - 320px) / (1310 - 320)));
+
+      }
+   }
+   
 }
 
 @media (max-width:940px) {
+  
    .modern{
       
       &__wrapper{
@@ -161,11 +174,29 @@
       }
    }
    
-
+   
 
    
 }
 @media (max-width:850px) {
+   .haber{
+      &__title{
+         font-size: calc(32px + 16 * ((100vw - 320px) / (1310 - 320)));
+         line-height: normal;
+         img{
+            max-height: 36px;  
+         }
+      }
+      &__dscr{
+         font-size: calc(18px + 16 * ((100vw - 320px) / (1310 - 320)));
+      }
+      &__background-img{
+         img{
+            width: 100%;
+
+         }
+      }
+   }
    .production{
       &__wrapper{
          flex-direction: column;
@@ -175,6 +206,11 @@
          margin-top: 30px;         
       }
       
+   }
+   .sports-time{
+      &__wrapper{
+         grid-template-columns: 1fr;
+      }
    }
    .best-shoes{
       margin-top: 100px;
@@ -193,5 +229,19 @@
    }
    
 }
-
+@media (max-width:730px) {
+   .header{
+      .burger{
+         position: absolute;
+         top: 30px;
+         left: 30px;
+         display: flex;
+      }
+      &__wrapper{
+         display: none;
+      }
+   }
+   
+   
+}
 

@@ -71,3 +71,18 @@
       
    }
 }
+.burger{
+   width: 100%;
+   height: 18px;
+   max-width: 48px;
+   justify-content: space-between;
+   flex-direction: column;
+   cursor: pointer;
+   display: none;
+   
+   div{
+      background-color: white;
+      display: block;
+      height: 2px;
+   }
+}
