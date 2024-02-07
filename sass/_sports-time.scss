@@ -38,22 +38,22 @@
       position: absolute;
       width: 1500px;
       height: 450px;
-      border: 1px solid #ffffff4a ;
+      border: 2px solid #ffffff4a ;
       transform: matrix3d(0,-1,0.00,0,1.00,0,0.00,-0.001,0,0,1,0,0,0,0,1);
       border-bottom: none;
       z-index: 1;
-      right: -50%;
+      right: -65%;
       top: 30%;
    
    }
    .right{
       width: 627px;
       height: 600px;
-      border: 1px solid #ffffff4a ;
+      border: 2px solid #ffffff4a ;
       transform: rotate(50deg);
       border-left: none;
       border-bottom: none;
-      left: -32.7%;
+      left: -48.7%;
       top: 68.3%;
       position: absolute;
    }

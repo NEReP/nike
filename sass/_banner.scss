@@ -43,12 +43,12 @@
       min-height: 500px;
 
       border-radius: 50%;
-      border-right: 3px solid #363739;
+      border-right: 5px solid #363739;
 
       position: absolute;
       z-index: 4;
-      top:60px;
-      left: -30%;
+      top:20%;
+      left: -10%;
       display: flex;
       justify-content: end;
       .decoration__btn{
@@ -59,28 +59,28 @@
             position: absolute;
             margin-bottom: 10px;
             &:first-child{
-               top: 15%;
+               top: 14%;
                right: 13%;
             }
             &:nth-child(2){
                top: 30%;
-               right: 5%;
+               right: 6%;
                
             }
             &:nth-child(3){
                top: 48%;
-               right: 2%;
+               right: 3%;
 
             }
             &:nth-child(4){
                top: 65%;
-               right: 5%;
+               right: 6%;
 
 
             }
             &:nth-child(5){
                top: 80%;
-               right: 15%;
+               right: 16%;
 
 
             }
@@ -96,17 +96,17 @@
             margin-right: 0;
             line-height: 18px;
             user-select: none;
-            z-index: 113;
+            z-index: 11;
          }
          .input-color__label::before {
             content: "";
             display: inline-block;
-            width: 16px;
-            height: 16px;
+            width: 24px;
+            height: 24px;
             position: absolute;
             border: 1px solid white;
             border-radius: 50%;
-            z-index: 121;
+            z-index: 12;
             
             
          }       
@@ -154,8 +154,8 @@
       
       position: absolute;  
       z-index:8;
-      right: -8%;
-      top: 50px;
+      right: 0;
+      top: 20%;
    }
    
     //------------------------------bottom decoration
@@ -179,7 +179,7 @@
       margin-bottom: 137px;
       padding: 60px 0px 0px 0px;
       position: relative;
-      z-index: 10;
+      z-index: 9;
 
       display: flex;
       justify-content: space-between;
@@ -274,8 +274,7 @@
          height: 60px;
          margin: 0 32px 0 18px;
 
-         &__title{
-                }
+       
       
         &[data-state="active"] {
           .select__title {

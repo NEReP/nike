@@ -1,5 +1,6 @@
 .header{
-   position: absolute;
+   position: relative;
+   background-color: #000;
    width: 100%;
    padding-bottom: 55px;
    z-index: 10;     
@@ -33,8 +34,8 @@
          }
          
          .nav__search-bnt{
-            width: 20px;
-            height: 20px;
+            // width: 20px;
+            // height: 20px;
             background-color: #000;
             background-image: url('../img/Searchicon.svg') cover ;
             
@@ -70,6 +71,45 @@
       
       
    }
+   .open{
+      display: block;
+      background-color: #000;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      margin: 0;
+      padding: 0;z-index: 16;
+      .nav__list{
+         -ms-flex-order: 1;
+
+         flex-direction: column;
+         align-items: center;
+         .nav__item{
+            width: 100%;
+            text-align: center;
+            padding: 30px 0 30px;
+            margin: 0;
+            border-bottom: 1px solid #fff;
+         }
+         
+
+      }
+      .nav__list-icons{
+         -ms-flex-order: 2;
+         flex-direction: row;
+         justify-content: space-between;
+
+      }
+      .logo{
+         -ms-flex-order: 3;
+         display: flex;
+         justify-content: center;
+         padding: 50px 0 50px;
+      }
+
+   }
 }
 .burger{
    width: 100%;
@@ -85,4 +125,5 @@
       display: block;
       height: 2px;
    }
+  
 }

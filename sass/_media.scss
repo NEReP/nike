@@ -1,247 +1,277 @@
-
-
-@media (max-width:1360px) {
-
-
-   
-   
-   .banner{
-      
-      &__img{
-          max-width: 105%;
-          position: relative;
-         
+@media (max-width: 1360px) {
+  .banner {
+    &__img {
+      max-width: 105%;
+      position: relative;
+    }
+    &__title {
+      font-size: 40px;
+    }
+    .price {
+      margin-right: 10%;
+    }
+    .slider {
+      &__img {
+        left: 0%;
       }
-      &__title{
-         font-size: 40px;
-      }
-      .price{
-         margin-right: 10%;
-      }
-      .slider{
-         &__img{
-            left:0%;
-            
-   
-         }
-     
-      }
-   }
+    }
+  }
 
-  
-   .decoration .left{
+  .decoration .left {
+    min-width: 200px;
 
-      min-width: 200px;
-
-      left: -11%;
-      z-index: 3;
-      &__btn{
-         display: none;
-      }
-   }
-   .decoration.bottom{
-      min-width: 37%;
-   }
-   .favorite{
-      &__slider{
-         left: 0;
-      }
-   }
+    left: -11%;
+    z-index: 3;
+    &__btn {
+      display: none;
+    }
+  }
+  .decoration.bottom {
+    min-width: 37%;
+  }
+  .favorite {
+    &__slider {
+      left: 0;
+    }
+  }
 }
-@media (max-width:1290px) {
-   .seller{
-      &__wrapper{
-         // align-items:center;
-         // flex-direction: column;
+@media (max-width: 1290px) {
+  .seller {
+    &__wrapper {
+      // align-items:center;
+      // flex-direction: column;
+    }
+    &__card {
+      transition: all 0.3s;
+      margin-top: 20px;
+      margin-right: 0;
+    }
+  }
 
-      }
-      &__card{
-         transition: all .3s;
-         margin-top: 20px;
-      }
-   }
+  .sports-time {
+    &__title {
+      font-size: 80px;
+    }
 
-   .sports-time{
-
-      &__title{
-         font-size: 80px;
+    &__wrapper {
+      grid-template-columns: 1fr 1fr;
+    }
+    &__product {
+      &:nth-child(3) {
+        grid-column-start: 1;
       }
-      
-      &__wrapper{
-         grid-template-columns: 1fr 1fr;
-      }
-      &__product{
-         &:nth-child(3){
-            grid-column-start: 1;
-   
-   
-         }
-   
-      }
-   }
-   
+    }
+  }
 }
 
-@media (max-width:1200px) {
+@media (max-width: 1200px) {
+  .sports-time {
+    &__title {
+    }
+  }
 
+  .haber {
+    &__dscr {
+    }
+    &__background-img {
+      left: -15%;
+      max-width: 100%;
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .banner {
+    &__wrapper {
+      flex-direction: column;
+    }
+    .decoration {
+      display: none;
+    }
+  }
+  .decoration {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+   .seller {
+      &__wrapper {
+        flex-wrap: wrap;
+      }
+    }
+  .best-shoes {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__title {
+      text-align: center;
+      margin: 0 auto;
+    }
+    &__text {
+      text-align: center;
+    }
+  }
+  .coupon {
+    &__title {
+      font-size: calc(28px + 16 * ((100vw - 320px) / (1310 - 320)));
+      line-height: normal;
+    }
+    &__descr {
+      font-size: calc(10px + 16 * ((100vw - 320px) / (1310 - 320)));
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  section {
+    margin-top: 60px !important;
+  }
  
-
-   .sports-time{
-      &__title{
-
+  .modern {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+      flex-flow: column-reverse;
+    }
+    &__img {
+      margin-right: 0;
+      img {
+        width: 100%;
       }
-   }
+    }
+    &__descr {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  }
+  .brands {
+    margin-top: 100px;
 
-   .haber{
-      &__dscr{
-         
+    &__wrapper {
+      flex-wrap: wrap;
+      flex-grow: 1;
+    }
+  }
+  .banner {
+    .slider {
+      &__name {
+        font-size: 14px;
+        padding-top: 60%;
+        padding-left: 7%;
       }
-      &__background-img{
-         left: -15%;
-         max-width: 100%;
+      &__content {
+        min-height: 100px;
       }
-   }  
+    }
+  }
+  .menu-bottom {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .footer {
+  }
 }
-
-
-@media (max-width:1000px) {
-   .best-shoes{
-      &__wrapper{
-         flex-direction: column;
-         align-items: center;
-   
+@media (max-width: 850px) {
+  .delivery {
+    &__wrapper {
+      justify-content: center;
+      // align-items: ;
+      gap: 30px;
+    }
+  }
+  .haber {
+    &__title {
+      font-size: calc(32px + 16 * ((100vw - 320px) / (1310 - 320)));
+      line-height: normal;
+      img {
+        max-height: 36px;
       }
-      &__title{
-         text-align: center;
-         margin: 0 auto;
-
+    }
+    &__dscr {
+      font-size: calc(18px + 16 * ((100vw - 320px) / (1310 - 320)));
+    }
+    &__background-img {
+      img {
+        width: 100%;
       }
-      &__text{
-         
-         text-align: center;
+    }
+  }
+  .production {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__text {
+      margin-top: 30px;
+    }
+  }
+  .sports-time {
+    &__wrapper {
+      grid-template-columns: 1fr;
+      padding-top: 150px;
+    }
+    &__product {
+      margin: 0 0 45% 0;
+    }
+    &__title {
+      max-width: 100%;
 
+      .rotated {
+        transform: none;
+        position: static;
       }
-   }
-   .coupon{
-      &__title{
-         font-size: calc(28px + 16 * ((100vw - 320px) / (1310 - 320)));
-         line-height: normal;
-
+    }
+  }
+  .best-shoes {
+    margin-top: 100px;
+  }
+  .coupon {
+    .bc-img {
+      display: none;
+    }
+    .logo {
+      position: static;
+    }
+    margin-top: 120px;
+  }
+  .banner {
+    .slider-section {
+      flex-direction: column;
+      .slider {
+        margin: 0;
+        max-width: 100%;
       }
-      &__descr{
-         font-size: calc(10px + 16 * ((100vw - 320px) / (1310 - 320)));
-
-      }
-   }
-   
+    }
+  }
 }
-
-@media (max-width:940px) {
-  
-   .modern{
-      
-      &__wrapper{
-         flex-direction: column;
-         align-items: center;
-         flex-flow: column-reverse;
+@media (max-width: 730px) {
+  .header {
+    position: static;
+    .burger {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      display: flex;
+    }
+    &__wrapper {
+      display: none;
+    }
+  }
+  .banner {
+    padding-top: 0px;
+    &__description {
+      margin-left: 0;
+    }
+  }
+  .best-shoes {
+    &__images {
+      max-width: 100%;
+      img {
+        width: 100%;
       }
-      &__img{
-         margin-right: 0;
-      }
-      &__descr{
-         margin-bottom: 40px;
-         text-align: center;
-      }
-   }
-   .brands{
-      margin-top: 100px;
-
-      &__wrapper{
-         flex-wrap: wrap;
-         flex-grow: 1;
-      }
-   }
-   .banner{
-      .slider{
-         &__name{
-            font-size: 14;
-            padding-top: 60%;
-            padding-left: 7%;
-         }
-         &__content{
-            min-height: 100px;
-         }
-      }
-   }
-   
-   
-
-   
+    }
+  }
 }
-@media (max-width:850px) {
-   .haber{
-      &__title{
-         font-size: calc(32px + 16 * ((100vw - 320px) / (1310 - 320)));
-         line-height: normal;
-         img{
-            max-height: 36px;  
-         }
-      }
-      &__dscr{
-         font-size: calc(18px + 16 * ((100vw - 320px) / (1310 - 320)));
-      }
-      &__background-img{
-         img{
-            width: 100%;
-
-         }
-      }
-   }
-   .production{
-      &__wrapper{
-         flex-direction: column;
-         align-items: center;
-      }
-      &__text{
-         margin-top: 30px;         
-      }
-      
-   }
-   .sports-time{
-      &__wrapper{
-         grid-template-columns: 1fr;
-      }
-   }
-   .best-shoes{
-      margin-top: 100px;
-   }
-   .coupon{
-      margin-top: 120px;
-   }
-   .banner{
-      .slider-section{
-         flex-direction: column;
-         .slider{
-            margin: 0;
-            max-width: 100%;
-         }
-      }
-   }
-   
-}
-@media (max-width:730px) {
-   .header{
-      .burger{
-         position: absolute;
-         top: 30px;
-         left: 30px;
-         display: flex;
-      }
-      &__wrapper{
-         display: none;
-      }
-   }
-   
-   
-}
-

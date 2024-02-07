@@ -22,7 +22,7 @@
    &__title{
       font-family: $md;
       font-weight: 400;
-      font-size: 64px;
+      font-size: clamp(3rem, 2.677rem + 1.62vw, 4rem);
 
 
    }
@@ -30,7 +30,7 @@
    &__text{
       margin-top: 24px;
       
-      font-size: 24px;
+      font-size: clamp(0.875rem, 0.673rem + 1.01vw, 1.5rem);
 
    }
    .btn__link {

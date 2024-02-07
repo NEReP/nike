@@ -1,6 +1,8 @@
 .coupon {
    margin-top: 300px;
    margin-bottom: 280px;
+   overflow: hidden;
+   min-width: 100vw;
 
    .container{
       position: relative;
@@ -23,8 +25,8 @@
 
    .bc-img {
       position: absolute;
-      right: -10%;
-      top: 46%;
+      right: -30%;
+      z-index: 1;
    }
 
    &__descr{
